@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Registration Form </title>
+        <style>
+            form {background-color:whitesmoke ;
+                width: 1000px;
+                margin: 50px;
+                padding: 10px;}
+            h1{text-align: center;}
+            fieldset{border: 2px solid gray;
+            padding-left: 20px;
+            margin: 30px;
+            margin-left: 50px;
+            margin-right: 70px;}
+            legend{ 
+                font-weight: bold;
+                font-size: 1.2em;
+                margin-bottom: 10px;
+                margin-left: 33px;
+                padding-bottom: 5px; }
+            div{text-align: center;
+            margin: 30px;
+            padding: 0px;}
+        </style>
+    </head>
+    <body>
+        <h1> User Registration Form </h1>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+
+    <fieldset>
+    <legend>Personal Information</legend>
+
+    <label for="First-name" class="required">First Name :</label>
+    <input type="text" name="Name" id="Name" required/><br><br>
+
+    <label for="Last-name" class="required">Last Name:</label>
+    <input type="text" name="name" id="Name" required><br><br>
+
+    <label for="dob" class="required">Date of Birth:</label>
+    <input type="date" name="dob" id="dob" ><br><br>
+
+    <label for="Age" class="required"> Age:</label>
+    <input type="number" name="Age" id="Age" ><br><br>
+
+    <label for="Gender" class="required">Gender:</label><br>
+    <input type="radio" id="gender" name="gender" value="Male">
+    <label for="Male"> Male </label><br>
+    <input type="radio" id="gender" name="gender" value="female">
+    <label for="female"> Female</label><br><br>    
+    <label for="Photo"> Profile Photo : </label>
+    <input type="file" name="photo" id="photo" accept="image/*"><br><br>
+
+    </fieldset>
+
+    <fieldset>
+    <legend>Contact & Address Information </legend>
+
+    <label for="email" class="required">Email :</label>
+    <input type="text" name="email" id="email" required/><br><br>
+
+    <label for="Phone-number" class="required">Phone Number :</label>
+    <input type="number" name="Number" id="number" required><br><br>
+
+    <label for="website"> Personal Website :</label>
+    <input type="url" name="text" id="text" placeholder="https://www.example.com" ><br><br>
+
+    <label for="Address"> Street Address :</label>
+    <input type="number" name="Address" id="Address" ><br><br>
+    
+
+    <label for="City"> City :</label>
+    <input type="text" name="name" id="name" ><br><br>
+
+    <label for="Country"> Country :</label>
+    <select id="country" name="country" required>
+        <option value="">--Select your country--</option>
+        <option value="burundi">Burundi</option>
+        <option value="comoros">Comoros</option>
+        <option value="djibouti">Djibouti</option>
+        <option value="eritrea">Eritrea</option>
+        <option value="ethiopia">Ethiopia</option>
+        <option value="kenya">Kenya</option>
+        <option value="madagascar">Madagascar</option>
+        <option value="mauritius">Mauritius</option>
+        <option value="rwanda">Rwanda</option>
+        <option value="seychelles">Seychelles</option>
+        <option value="somalia">Somalia</option>
+        <option value="south-sudan">South Sudan</option>
+        <option value="sudan">Sudan</option>
+        <option value="tanzania">Tanzania</option>
+        <option value="uganda">Uganda</option>
+</select><br><br>
+
+    <label for="ZIP"> ZIP/ Postal Code  :</label>
+    <input type="number" name="number" id="number"><br><br>
+    
+    <label for="time"> Preffered Contact Time :</label>
+    <input type="time" name="time" id="time" ><br><br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Preference & Interests </legend>
+
+    <label for="color">Favourite Color :</label>
+    <input type="color" name="color" id="color" ><br><br>
+
+    <label for="experience">Experience Level :</label>
+    <input type="range" id="experience" name="experience" min="1" max="10" ><br><br>
+
+    <label for="birthmonth">Birth Month:</label>
+    <input type="month" id="birthmonth" name="birthmonth" ><br><br>
+
+    <label for="availweek">Available Week:</label>
+    <input type="week" id="availweek" name="availweek" required><br><br>
+
+    <label for="keywords">Search Keywords:</label>
+    <input type="search" id="keywords" name="keywords" placeholder="Enter keywords..."><br><br>
+
+    <label>Interests (select all that apply)</label><br>
+    <label><input type="checkbox" name="interests" value="tech"> Technology </label><br>
+    <label><input type="checkbox" name="interests" value="sports"> sports</label><br>
+    <label><input type="checkbox" name="interests" value="music">  Music</label><br>
+    <label><input type="checkbox" name="interests" value="travel"> Travel</label><br>
+    <label><input type="checkbox" name="interests" value="reading"> Reading</label><br>
+    <label><input type="checkbox" name="interests" value="cooking">  Cooking </label><br><br>
+
+
+    <label for="education">Education level: </label>
+    <select id="education" name="education" required>
+      <option value="">-- select education level --</option>
+      <option value="highschool">High School</option>
+      <option value="diploma">Diploma</option>
+      <option value="undergraduate">Undergraduate</option>
+      <option value="postgraduate">Postgraduate</option>
+      <option value="other">Other</option>
+    </select><br><br>
+
+    <label class="required">Create Password *</label>
+    <input type="password" name="password" required><br><br>
+
+    <label >Confirm Password *</label>
+    <input type="password" name="confirm_password" required><br><br>
+    </fieldset>
+
+    <fieldset>
+    <legend>Feedback & Additional Information</legend>
+
+    <label>Tell us about yourself:</label><br>
+    <textarea name="about_yourself" rows="4" cols="50" placeholder="Write a brief description about yourself..."></textarea><br><br>
+
+    <label>Suggestions for improvement:</label><br>
+    <textarea name="suggestions" rows="4" cols="50" placeholder="Any suggestions or Feedback..."></textarea><br><br>
+
+    <label>Registration Date:</label>
+    <input type="date" name="registration_date"><br><br>
+    
+    <label>Registration Time:</label>
+    <input type="time" name="registration_time"><br><br>
+
+    <label>How did you hear about us?</label>
+    <select name="referral">
+      <option value="">-- Select an option --</option>
+      <option value="friends"> Refferal</option>
+      <option value="Whatsapp"> Whatsapp</option>
+      <option value="Instagram"> Instagram</option>
+      <option value="ads">Online Ads</option>
+      <option value="website">Our Website</option>
+      <option value="other">Other</option>
+    </select><br><br>
+
+    <label>Upload Resume (optional):</label><br>
+    <input type="file" name="resume"><br><br>
+
+    <label><input type="checkbox" name="newsletter"> Subscribe to our newsletter</label><br>
+    <label><input type="checkbox" name="terms" required> I agree to the Terms & Conditions *</label><br>
+    <label><input type="checkbox" name="privacy" required> I agree to the Privacy Policy *</label><br><br>
+
+    </fieldset>
+
+    <div>
+    <input type="submit" value="Register" class="Submit">
+    <input type="reset" value="Clear Form" class="Submit">
+    </div>
+    </body>
+</html>
