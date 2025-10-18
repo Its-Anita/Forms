@@ -34,13 +34,7 @@ The form is visually enhanced for clarity, accessibility, and ease of use.
 - **Form Elements:**  
   - Rounded corners (`border-radius: 5px`)  
   - Smooth transitions on hover and focus  
-  - Inputs expand to 100% width within the container  
-- **Buttons:**  
-  - Blue background with hover effects  
-  - `transition: 0.3s` for smooth animations  
-- **Responsive Design:**  
-  - Scales well on smaller screens using percentage widths  
-  - Optional media query support for full responsiveness  
+  - Inputs expand to 100% width within the container
 
 ---
 
